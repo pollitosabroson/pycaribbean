@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org" id="ng-app" data-ng-app="demo">
+{% load staticfiles %}
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="/">
+        <title>PyCaribbean</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    </head>
+    <body>
+        <div class="container">
+            <div ui-view></div>
+        </div>
+        <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/holder.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/lodash.min.js' %}"></script>
+
+        <script type="text/javascript" src="{% static 'js/angular.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/angular-base64.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/angular-local-storage.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/angular-resource.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/angular-ui-router.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/vo-angular-api.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/vo-angular-content.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/angular-ui-bootstrap.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/angular-animate.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'app/js/app.js' %}"></script>
+        <script type="text/javascript" src="{% static 'app/js/home/states.js' %}"></script>
+        <script type="text/javascript" src="{% static 'app/js/home/resources.js' %}"></script>
+        <script type="text/javascript" src="{% static 'app/js/home/controllers.js' %}"></script>
+    </body>
+</html>

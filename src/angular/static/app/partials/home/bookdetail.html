@@ -1,0 +1,23 @@
+<div class="row">
+    <br>
+    <div class="col-lg-12 text-center">
+        <img class="img-thumbnail" src="https://pythonizame.s3.amazonaws.com/media/uploads/2015/11/19/pycarraibean.jpg" alt="Generic placeholder image" width="250" height="250">
+    </div>
+    <div class="col-lg-12">
+        <h1>{{ book.nombre }}</h1>
+        <h3>Descripción</h3>
+        <p>{{ book.descripcion }}</p>
+        <h3>Autor</h3>
+        <p>{{ book.autor }}</p>
+        <h3>Genero</h3>
+        <p>{{ book.genero }}</p>
+        <h3>Editorial</h3>
+        <p>{{ book.editorial }}</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <a ui-sref="home.list" class="btn btn-primary">Volver</a>
+        <a ui-sref="home.edit({bookId: book.id})" class="btn btn-success">Editar</a>
+    </div>
+</div>
